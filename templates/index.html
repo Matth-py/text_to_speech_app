@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-to-Speech Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text-to-Speech Converter</h1>
+
+      <form id="text-form">
+        <textarea
+          id="text-input"
+          rows="6"
+          placeholder="Enter your text here"
+        ></textarea
+        ><br />
+        <button type="submit">Convert to Speech</button>
+      </form>
+
+      <div id="download-section" style="display: none;">
+        <h3>Download your audio:</h3>
+        <a id="download-link" href="#" download="output.mp3">Download Audio</a>
+      </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
