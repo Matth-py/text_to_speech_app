@@ -8,7 +8,7 @@ form.addEventListener('submit', async function(event) {
         return;
     }
 
-    const response = await fetch('/convert', {
+    const response = await fetch('https://your-app-name.onrender.com/convert', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
